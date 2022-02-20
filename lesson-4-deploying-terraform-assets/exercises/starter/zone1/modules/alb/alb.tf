@@ -23,7 +23,7 @@
 
  resource "aws_lb_listener" "udacity" {
    load_balancer_arn = aws_lb.udacity.arn
-   port              = ""
+   port              = "80"
    protocol          = "HTTP"
    default_action {
      type             = "forward"
